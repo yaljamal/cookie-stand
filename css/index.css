@@ -1,0 +1,104 @@
+html, body{
+     margin: 0;
+    padding: 0;
+}
+img{
+    height: 100%;
+}
+body{
+    background-image: url("../img/brightwood.jpg");
+    z-index: -1;
+    background-repeat: repeat-y;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+header
+{
+width: 100%;
+height: 20%;
+}
+header ul{
+    font-size: 23px;
+}
+#logo{
+    width: 10%;
+
+}
+header ul li{
+float: right;
+padding: 44px 4px;
+display: inline;
+}
+header ul li a{
+text-decoration: none;
+color: #f0c612;
+padding: 20px;
+}
+main{
+    clear: both;
+}
+.h3main{
+    text-align: center;
+    font-size: 28px;
+    color: #f0c612;
+}
+article img{
+    width: 14%;
+    padding-left: 33px;
+    padding-top: 28px;
+    float: left;
+}
+.articalP{
+    float: left;
+    text-align: center;
+    padding-top: 60px;
+    padding-left: 32px;
+    font-size: larger;
+
+}
+.price{
+    text-align: center;
+    color: red;
+    font-size: 23px;
+    text-decoration: none;
+
+}
+b{
+    font-weight: 800;
+}
+#call{
+    clear: both;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+footer{
+    clear: both;
+    height: 50px;
+    width: 100%;
+}
+#location{
+    clear: both;
+    
+    /* padding-top: 38px;
+    padding-left: 342px; */
+    width: 100%;
+}
+#location iframe{
+    height: 253px;
+    padding: 33px;;
+    float:right;
+}
+#feedback{
+    float: left;
+    padding: 30px;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 18px;
+    font-size: 20px;
+    color: #f0c612;
+    
+}
