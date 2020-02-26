@@ -54,12 +54,23 @@ main{
     margin-left: 20%;
 }
 .articalP{
-    float: left;
+    clear: both;
+    width: 189px;
     text-align: center;
-    padding-top: 60px;
-    padding-left: 32px;
+    padding-top: 45px;
+    float: left;
+    padding-left: 31px;
     font-size: larger;
-
+}
+#text{
+    clear: both;
+    clear: both;
+    width: 189px;
+    text-align: center;
+    padding-top: 45px;
+    float: left;
+    padding-left: 31px;
+    font-size: larger;
 }
 .price{
     text-align: center;
