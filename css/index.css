@@ -43,11 +43,15 @@ main{
     font-size: 28px;
     color: #f0c612;
 }
-article img{
-    width: 14%;
-    padding-left: 33px;
+.imgMnue{
+    width: 16%;
+    padding-left: 60px;
     padding-top: 28px;
     float: left;
+
+}
+#menue{
+    margin-left: 20%;
 }
 .articalP{
     float: left;

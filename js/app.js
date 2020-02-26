@@ -126,7 +126,10 @@ submit.addEventListener('submit', function (event) {
   var newLocation = new Location(name, min, max, avg);
   newLocation.render();
   totalOfTotal();
-});
+  document.getElementById("locationForm").reset();
+}
+);
+
 for (var i = 0; i < locationarry.length; i++) {
   locationarry[i].render();
 }
