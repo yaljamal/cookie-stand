@@ -1,9 +1,18 @@
 .locaton{
     padding-left: 106px;
     padding-top: 30px;
+    clear: both;
+    margin-left: 14%;
+
+}
+form{
+    padding-top: 30px;
+    clear: both;
+    padding-left: 354px;
+
 }
 h2{
-    text-align: center;
+    float: left;
 
 }
 #name{
@@ -23,6 +32,8 @@ a{
     text-decoration: none;
     color :  black;
     font-weight: bold;
+    float: right;
+
     
 }
 #submit{
@@ -34,10 +45,4 @@ input{
 }
 table ,tr ,td{
     border: solid black;
-}
-form{
-    border: solid black;
-    width: 41%;
-    margin-left: 105px;
-
 }
