@@ -88,12 +88,11 @@ function totalOfTotal() {
     var tdEli3 = document.createElement('td');
     tdEli3.textContent = sum1;
     table.appendChild(tdEli3);
-
     // console.log(total);
   }
-  var tdEli3 = document.createElement('td');
-  table.appendChild(tdEli3);
-  tdEli3.textContent = masterTotal;
+  var tdEli4 = document.createElement('td');
+  table.appendChild(tdEli4);
+  tdEli4.textContent = masterTotal;
 }
 //helping function 
 function chunkArray(myArray) {
@@ -108,7 +107,7 @@ function chunkArray(myArray) {
   return tempArray;
 }
 // make the objects
-new Location('seatle', 11, 38, 3.7);
+new Location('seattle', 11, 38, 3.7);
 new Location('tokyo', 3, 24, 1.2);
 new Location('dubai', 11, 38, 3.7);
 new Location('paris', 20, 38, 2.3);
@@ -124,9 +123,16 @@ submit.addEventListener('submit', function (event) {
   var max = event.target.max.value;
   var avg = event.target.avg.value;
   var newLocation = new Location(name, min, max, avg);
+
+  // table.replaceChild(newLocation,totalOfTotal);
+  console.log(counter);
+  // table.deleteRow(counter);
   newLocation.render();
   totalOfTotal();
+  Location.render;
   document.getElementById("locationForm").reset();
+  
+ // table.deleteRow();
 }
 );
 
