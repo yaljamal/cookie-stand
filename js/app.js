@@ -72,7 +72,7 @@ Location.prototype.render = function () {
 
 };
 function totalOfTotal() {
-  var totalOfRandom = document.createElement('th');
+  var totalOfRandom = document.createElement('tr');
   table.appendChild(totalOfRandom);
   totalOfRandom.textContent = "Total";
   console.log(data);
@@ -87,11 +87,11 @@ function totalOfTotal() {
     total += sum1;
     var tdEli3 = document.createElement('td');
     tdEli3.textContent = sum1;
-    table.appendChild(tdEli3);
+    totalOfRandom.appendChild(tdEli3);
     // console.log(total);
   }
   var tdEli4 = document.createElement('td');
-  table.appendChild(tdEli4);
+  totalOfRandom.appendChild(tdEli4);
   tdEli4.textContent = masterTotal;
 }
 //helping function 
@@ -125,8 +125,10 @@ submit.addEventListener('submit', function (event) {
   var newLocation = new Location(name, min, max, avg);
 
   // table.replaceChild(newLocation,totalOfTotal);
-  console.log(counter);
-  // table.deleteRow(counter);
+  //console.log(counter);
+  // var tableLength= table.querySelector(table).rows.length;
+  // table.deleteRow(tableLength);
+  table.deleteRow(counter);
   newLocation.render();
   totalOfTotal();
   Location.render;
